@@ -84,6 +84,7 @@ PRODUCT_PACKAGES += \
 
 # Packages
 PRODUCT_PACKAGES += \
+    DefaultThemesStub \
     Jelly \
     ThemePicker \
     WallpaperPickerGoogleRelease \
