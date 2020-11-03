@@ -42,7 +42,8 @@ $(call inherit-product-if-exists, device/*/$(TARGET_PRODUCT)-kernel/kernel.mk)
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayExtra \
     FrameworksOverlayExtra \
-    SystemUIOverlayExtra
+    SystemUIOverlayExtra \
+    ThemePickerOverlayExtra
 
 # Packages
 PRODUCT_PACKAGES += \
