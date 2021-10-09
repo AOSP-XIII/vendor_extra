@@ -77,6 +77,9 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, device/*/$(TARGET_PRODUCT)-kernel/kernel.mk)
 
 # Overlay
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay-norro
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-norro
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayExtra \
     FrameworksOverlayExtra \
