@@ -17,3 +17,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemePicker \
     messaging
+
+# Repainter
+PRODUCT_PACKAGES += \
+    RepainterServicePriv \
+    RepainterServicePrivOverlay
