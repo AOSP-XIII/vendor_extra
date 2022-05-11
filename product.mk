@@ -15,6 +15,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# Compile SystemUI on device with `speed`.
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.systemuicompilerfilter=speed
+
 # GMS
 ifeq ($(WITH_GMS), true)
 $(call inherit-product, vendor/gms/common/common-vendor.mk)
