@@ -11,6 +11,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/charger,$(TARGET_COPY_OUT_PRODUCT)/etc/res)
 
+# GMS
+ifeq ($(WITH_GMS), true)
+$(call inherit-product, vendor/gms/common/common-vendor.mk)
+endif
+
 # ih8sn
 PRODUCT_PACKAGES += \
     ih8sn
