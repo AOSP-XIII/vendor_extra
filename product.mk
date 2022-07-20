@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
 
 # Packages
 PRODUCT_PACKAGES += \
+    Jelly \
     ThemePicker \
     messaging
 
