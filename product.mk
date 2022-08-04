@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Jelly \
     ThemePicker \
+    WallpaperPickerGoogleRelease \
     messaging
 
 # Repainter
