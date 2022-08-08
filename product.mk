@@ -30,7 +30,8 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayExtra \
-    FrameworksOverlayExtra
+    FrameworksOverlayExtra \
+    SystemUIOverlayExtra
 
 # Packages
 PRODUCT_PACKAGES += \
