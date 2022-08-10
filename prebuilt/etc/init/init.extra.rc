@@ -1,0 +1,10 @@
+# Disable recovery updation
+service vendor_flash_recovery /vendor/bin/install-recovery.sh
+    override
+    class main
+    oneshot
+    disabled
+
+# Update recovery if enabled
+on property:persist.vendor.recovery_update=true
+    start vendor_flash_recovery

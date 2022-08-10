@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/ih8sn.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/init/init.extra.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.extra.rc
+
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksOverlayExtra
