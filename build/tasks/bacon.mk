@@ -15,8 +15,7 @@
 
 # -----------------------------------------------------------------
 # AOSP OTA update package
-
-AOSP_TARGET_PACKAGE := $(PRODUCT_OUT)/aosp-$(PLATFORM_VERSION)-$(shell date -u +%Y%m%d_%H%M)-$(TARGET_BUILD_VARIANT)-$(TARGET_PRODUCT).zip
+AOSP_TARGET_PACKAGE := $(PRODUCT_OUT)/aosp-$(PLATFORM_VERSION)-$(shell date -u +%Y%m%d_%H%M)$(EXTRAVERSION)-$(TARGET_PRODUCT).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 

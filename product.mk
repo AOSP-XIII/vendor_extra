@@ -21,6 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GMS
 ifeq ($(WITH_GMS), true)
+EXTRAVERSION := -gms
 $(call inherit-product, vendor/gms/common/common-vendor.mk)
 endif
 
