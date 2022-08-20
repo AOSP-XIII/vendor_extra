@@ -94,4 +94,13 @@
         <!-- Standalone UnifiedNlp (for gapps) -->
         <item>org.microg.nlp</item>
     </string-array>
+
+    <!-- Name of a font family to use for body text. -->
+    <string name="config_bodyFontFamily">google-sans-text</string>
+    <!-- Name of a font family to use for medium body text. -->
+    <string name="config_bodyFontFamilyMedium">google-sans-text-medium</string>
+    <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
+    <string name="config_headlineFontFamily">google-sans</string>
+    <!-- Allows setting custom fontFeatureSettings on specific text. -->
+    <string name="config_headlineFontFeatureSettings">ss03</string>
 </resources>
