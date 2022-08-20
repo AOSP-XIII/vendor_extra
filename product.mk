@@ -24,6 +24,19 @@ ifeq ($(WITH_GMS), true)
 $(call inherit-product, vendor/gms/common/common-vendor.mk)
 endif
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/fonts/ttf,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    $(LOCAL_PATH)/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+
+PRODUCT_PACKAGES += \
+    FontHarmonySansOverlay \
+    FontInterOverlay \
+    FontLinotteSourceOverlay \
+    FontManropeOverlay \
+    FontOppoSansOverlay \
+    FontSanFranciscoOverlay
+
 # Icons packs
 PRODUCT_PACKAGES += \
     IconPackCircularAndroidOverlay \
