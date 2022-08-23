@@ -35,6 +35,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/init/init.extra.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.extra.rc
 
+# Kernel
+$(call inherit-product-if-exists, device/*/$(TARGET_PRODUCT)-kernel/kernel.mk)
+
 # Overlay
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayExtra \
