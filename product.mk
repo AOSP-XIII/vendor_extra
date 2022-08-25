@@ -88,7 +88,6 @@ PRODUCT_PACKAGES += \
     DefaultThemesStub \
     Jelly \
     ThemePicker \
-    WallpaperPickerGoogleRelease \
     messaging
 
 # Repainter
